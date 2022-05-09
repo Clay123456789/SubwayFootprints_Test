@@ -1,0 +1,15 @@
+-
+    protocol: "https"
+    ip: "thelittlestar.cn"
+    port: "8088"
+
+    user:
+      #登陆
+      login:
+        path: "/user/login"
+      #发送注册邮件
+      sendRegistEmail:
+        path: "/user/sendRegistEmail"
+      #注册
+      regist:
+        path: "/user/regist"

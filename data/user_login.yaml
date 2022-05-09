@@ -1,0 +1,42 @@
+-
+    #1.正确的用户名作为账号和密码
+    Data:
+        username: "Clay"
+        password: "111111"
+    message: "成功"
+-
+    #2.正确的邮箱作为账号和正确的密码
+    Data:
+        username: "2019211996@bupt.cn"
+        password: "111111"
+    message: "成功"
+-
+    #3.密码错误
+    Data:
+        username: "Clay"
+        password: "123456"
+    message: "登陆失败，账号/密码信息不正确。"
+-
+    #4.账号错误（既非用户名也非邮箱）
+    Data:
+        username: "admin"
+        password: "111111"
+    message: "登陆失败，账号/密码信息不正确。"
+-
+    #5.账号为空
+    Data:
+        username: ""
+        password: "111111"
+    message: "账号或密码不能为空！"
+-
+    #6.密码为空
+    Data:
+        username: "Clay"
+        password: ""
+    message: "账号或密码不能为空！"
+-
+    #7.账号和密码都为空
+    Data:
+        username: ""
+        password: ""
+    message: "账号或密码不能为空！"

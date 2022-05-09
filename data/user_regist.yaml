@@ -1,0 +1,42 @@
+#前端已验证各信息格式均符合规范
+-
+  #1.用户名未被使用，邮箱和验证码正确
+  Data:
+      username: "user001"
+      password: "123456"
+      email: "1042179352@qq.com"
+      code: "147298"
+  message: "成功"
+-
+  #2.用户名已被使用，邮箱和验证码正确
+  Data:
+      username: "Clay"
+      password: "123456"
+      email: "1042179352@qq.com"
+      code: "147298"
+  message: "注册失败！验证码不一致"
+-
+  #3.邮箱与发送注册的邮件不同
+  Data:
+      username: "user001"
+      password: "123456"
+      email: "1537024039@qq.com"
+      code: "147298"
+  message: "注册失败！验证码不一致"
+-
+  #4.验证码不一致
+  Data:
+      username: "user001"
+      password: "123456"
+      email: "1042179352@qq.com"
+      code: "666666"
+  message: "注册失败！验证码不一致"
+  #-
+  #5.验证码已过期（本用例已单独人工测试）
+  #Data:
+  #   username: "user001"
+  #   password: "123456"
+  #   email: "1042179352@qq.com"
+  #   code: "147298"
+  #message: "注册失败！验证码不一致"
+  #-
